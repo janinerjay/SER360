@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Check Glucose</title> <!-- This is my title-->
+        <link rel="stylesheet" type="text/css" ></link>
+	</head>
+	<body style="text-align:center;">
+        <h1>Check Patient Glucose Level</h1>
+        <h4>Patient's Normal Glucose Level: 80</h4>
+        
+        <form action="demo_form.asp">
+            Glucose Level: <input type="text" name="glevel"><br>
+            <input type="submit" value="Submit">
+        </form>
+        <br>
+        
+        <table style="width:100%">
+            <tr>
+                <th colspan="2">Sliding Scale</th>
+            </tr>
+            <tr>
+                <th>Glucose Level</th>
+                <th>Number of Units</th>
+            </tr>
+            <tr>
+                <td>0 - 80</td>
+                <td>0 Units</td>
+            </tr>
+            <tr>
+                <td>81 - 120</td>
+                <td>2 Units</td>
+            </tr>
+            <tr>
+                <td>121 - 150</td>
+                <td>4 Units</td>
+            </tr>
+            <tr>
+                <td>151 - 200</td>
+                <td>6 Units</td>
+            </tr>
+            <tr>
+                <td>201 - 250</td>
+                <td>8 Units</td>
+            </tr>
+            <tr>
+                <td>251 - 300</td>
+                <td>10 Units</td>
+            </tr>
+            <tr>
+                <td>301 - 350</td>
+                <td>12 Units</td>
+            </tr>
+            <tr>
+                <td> > 350</td>
+                <td>Call House Officer</td>
+            </tr>
+        </table>
+        
+        <input type="submit" value="Glucose Checked">
+	</body>
+</html>
