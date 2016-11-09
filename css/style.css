@@ -1,5 +1,45 @@
 *{
-	background-color: #000066;
+	
 	color: #ffffff;
 	font-family: 'Roboto', sans-serif;
+}
+
+
+head{
+	align-items: center;
+	background-color: #000066;
+}
+body {
+    margin: 0;
+    background-color: #000066;
+
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 18%;
+    background-color: #555;
+    position: fixed;
+    height: 100%;
+    overflow: auto;
+
+}
+
+li a {
+    display: block;
+    color: #ffffff;
+    padding: 20px 16px;
+    text-decoration: none;
+}
+
+li a.active {
+    background-color: #000066;
+    color: #fff;
+}
+
+li a:hover:not(.active) {
+    background-color: #fff;
+    color: #000;
 }
