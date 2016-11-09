@@ -2,8 +2,8 @@
 	
 	color: #ffffff;
 	font-family: 'Roboto', sans-serif;
+    background-color: #5CB5FF;
 }
-<<<<<<< HEAD
 table, th, td{
     border-collapse: collapse;
     border: 1px solid #ffffff;
@@ -13,16 +13,15 @@ tr:hover{
 }
 th{
     background-color: #396BCE;
-=======
 
 
 head{
 	align-items: center;
-	background-color: #000066;
+	background-color: #5CB5FF;
 }
 body {
     margin: 0;
-    background-color: #000066;
+    background-color: #5CB5FF;
 
 }
 
@@ -53,5 +52,4 @@ li a.active {
 li a:hover:not(.active) {
     background-color: #fff;
     color: #000;
->>>>>>> nova
 }
