@@ -2,26 +2,22 @@
 <html>
 	<head>
 		<title>Check Medication/Dose/Route/Time</title> <!-- This is my title-->
-<<<<<<< HEAD
-        <link rel="stylesheet" type="text/css" href="css/style.css" ></link>
+        <link rel="stylesheet" href="css/style.css" ></link>
         <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
-=======
-        <link rel="stylesheet" href="css/style.css">
->>>>>>> master
 	</head>
     <body>
 
     <div class="sidebar_nav" style="text-align:left">
          <ul>
-            <li><a  href="#">Sign In As Nurse</a></li>
-            <li><a href="#">Check Patient Info</a></li>
-            <li><a href="#">Check Glucose Level</a></li>
-            <li><a class="active" href="#">Check Injection Info</a></li>
-            <li><a  href="#">Educate Patient</a></li>
-            <li><a href="#">Check Medication</a></li>
-            <li><a href="#">Check Medication Nurse 2</a></li>
-            <li><a href="#">Administer Medication</a></li>
-            <li><a href="#">Document Injection</a></li>
+            <li><a href="SignIn.html">Sign In As Nurse</a></li>
+            <li><a href="RightPatient.html">Check Patient Info</a></li>
+            <li><a href="Glucose.html">Check Glucose Level</a></li>
+            <li><a href="CheckMed.html">Check Injection Info</a></li>
+            <li><a href="PatientEd.html">Educate Patient</a></li>
+            <li><a class="active" href="#">Check Medication</a></li>
+            <li><a href="CheckMedSec.html">Check Medication Nurse 2</a></li>
+            <li><a href="MedAdmin.html">Administer Medication</a></li>
+            <li><a href="Document.html">Document Injection</a></li>
         </ul>
         </div>
 
@@ -34,17 +30,15 @@
         <p>Injection Notes: Alternating thighs with each injection</p>
         <p>Route: Right Thigh</p>
         <p>Dose: 2 Units</p>
-        <form>
+        <form action="CheckMedSec.html">
             Time:
             <input type="time" value="14:27:04">
-        </form>
-        <br>
-        <form>
+            <br>
             Date:
             <input type="date" value="11/29/2016">
+            <br>
+            <input type="submit" value="Correct Medication">
         </form>
-        <br>
-        <input type="submit" value="Correct Medication">
     </div>
 	</body>
 </html>
