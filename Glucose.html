@@ -26,10 +26,20 @@
         <h1>Check Patient Glucose Level</h1>
         <h4>Patient's Normal Glucose Level: 80</h4>
         
-        <form action="demo_form.asp">
-            Glucose Level: <input type="text" name="glevel"><br><br>
+        <script type="text/javascript">
+            function handleSubmit(){
+                var g = document.getElementById("glevel").value;
+                if (g <= 80){
+                    alert("Glucose level is too low. Administer glucose tablets and test again in a few minutes.")
+                }
+            }
+        </script>
+        
+        <form onsubmit="handleSubmit();return false;">
+            Glucose Level: <input type="text" name="glevel" id="glevel"><br><br>
             <input type="submit" value="Submit">
         </form>
+        
         <br>
         
         <table align="center" style="width:80%">
