@@ -25,10 +25,76 @@
         <img src="images/syringe.png"; width="225px" height="150px" >
         <h1>Check Right Medication, Route, Dose, Time, and Date</h1>
         
-        <p>Medication: Humalog</p>
-        <p>Last Route: Left Thigh</p>
+       
+        
+        <p>Select a Route According To The Below Notes</p>
         <p>Injection Notes: Alternating thighs with each injection</p>
-        <p>Route: Right Thigh</p>
+
+         <!-- <img src="images/body1.png" id="body1"> 
+         Remake coordinates to make them more accurate,
+         put a tip marker at the last injection-->
+         <img src="images/marker.png" id="marker" width="40px" height="40px" style="display: none; position: absolute; left: 400; top: 100;background-color: transparent;" />
+<img src="images/body1.png" id="map" />
+<p>                          </p>
+<div class="tooltip">
+<img src="images/body1.png" id="map" />
+  <span class="tooltiptext">Last Route</span>
+</div>
+
+<script type="text/javascript">
+document.getElementById('map').onclick = function(e)
+{
+   with(document.getElementById('marker'))
+   {
+
+        style.left = 640 + "px"
+        style.top = 445 + "px"
+        style.display = 'inline'
+        // style.left = e.pageX;
+        //  style.top = e.pageY;
+        //  style.display = 'block';
+   }
+   
+};
+</script>
+<style>
+.tooltip {
+    position: relative;
+    display: inline-block;
+    border-bottom: 1px dotted black;
+}
+
+.tooltip .tooltiptext {
+    visibility: visible;
+    width: 120px;
+    background-color: #fff;
+    color: #000;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    top: 150px;
+    left: 42%;
+}
+
+.tooltip .tooltiptext::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: 100%;
+    margin-top: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent white transparent transparent;
+}
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+}
+</style>
+
+         <p>Medication: Humalog</p>
+        <p>Last Route: Left Thigh</p>
         <p>Dose: 2 Units</p>
         <form action="CheckMedSec.html">
             Time:
