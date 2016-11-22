@@ -7,6 +7,8 @@
         
 	</head>
 	<body>
+    
+    </div>
 
     <div class="sidebar_nav">
          <ul>
@@ -25,11 +27,27 @@
     <div class="page_content"; style="text-align:center;">   
     <img src="images/syringe.png"; width="225px" height="150px" >
         <h1>Nurse Sign-In</h1>
-        <form action="RightPatient.html">
-            Nurse Name: <input type="text" name="nname"><br><br>
-            Employee ID: <input type="text" name="employID1"><br><br>
-            <input type="submit" value="Sign-In">
+        <form name="login">
+            Nurse Name : <input type="text" name="userid"/><br><br>
+            Employee ID : <input type="password" name="pswrd"/><br><br>
+        <input type="button" onclick="check(this.form)" value="Login"/>
+        <input type="reset" value="Cancel"/>
         </form>
+        <script language="javascript">
+    function check(form)/*function to check userid & password*/
+    {
+    /*the following code checkes whether the entered userid and password are matching*/
+    if(form.userid.value == "Chris" && form.pswrd.value == "1111")
+     {
+      window.open('RightPatient.html')/*opens the target page while Id & password matches*/
+     }
+    else
+    {
+      alert("Incorrect Nurse Name or Employee ID, Press OK to try again")/*displays error message*/
+     }
+    }
+</script>
+    
     </div> 
 	</body>
 </html>
