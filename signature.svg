@@ -1,6 +1,6 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="300" height="100" viewBox="0 0 300 100">
-  <rect id="r" width="300" height="100" fill="#7a7a7a"/>
-  <line x1="0" y1="80" x2="300" y2="80" stroke="#ffffff" stroke-width="1" stroke-dasharray="3" shape-rendering="crispEdges" pointer-events="none"/>
+<svg xmlns="http://www.w3.org/2000/svg"  width="300" height="150" viewBox="0 0 300 150">
+  <rect id="r" width="300" height="150" fill="#babcbc"/>
+  <line x1="0" y1="100" x2="300" y2="100" stroke="#ffffff" stroke-width="1" stroke-dasharray="3" shape-rendering="crispEdges" pointer-events="none"/>
   <path id="p" stroke="white" stroke-width="2" fill="none" pointer-events="none" d="M269,35 "/>
   <script>
     var r = document.getElementById('r'),

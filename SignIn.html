@@ -30,14 +30,14 @@
         <form name="login">
             Nurse Name : <input type="text" name="userid"/><br><br>
             Employee ID : <input type="password" name="pswrd"/><br><br>
-        <input type="button" onclick="check(this.form)" value="Login"/>
-        <input type="reset" value="Cancel"/>
+        <input style="font-size: 14px" type="button" onclick="check(this.form)" value="Login"/>
+        <input style="font-size: 14px" type="reset" value="Clear"/>
         </form>
         <script language="javascript">
     function check(form)/*function to check userid & password*/
     {
     /*the following code checkes whether the entered userid and password are matching*/
-    if(form.userid.value == "Chris" && form.pswrd.value == "1111")
+    if(form.userid.value == "House" && form.pswrd.value == "1111")
      {
       window.open('RightPatient.html')/*opens the target page while Id & password matches*/
      }

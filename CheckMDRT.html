@@ -68,6 +68,7 @@ document.getElementById('map').onclick = function(e)
     visibility: visible;
     width: 120px;
     background-color: #fff;
+    border: 1px solid #000;
     color: #000;
     text-align: center;
     border-radius: 6px;
@@ -86,7 +87,7 @@ document.getElementById('map').onclick = function(e)
     margin-top: -5px;
     border-width: 5px;
     border-style: solid;
-    border-color: transparent white transparent transparent;
+    border-color: transparent black transparent transparent;
 }
 .tooltip:hover .tooltiptext {
     visibility: visible;
@@ -98,12 +99,13 @@ document.getElementById('map').onclick = function(e)
         <p>Dose: 2 Units</p>
         <form action="CheckMedSec.html">
             Time:
-            <input type="time" value="14:27:04">
+            <input style="font-size:14px" type="time" value="14:56:00">
             <br>
             Date:
-            <input type="date" value="11/29/2016">
+            <input style="font-size:14px" type="date" value="11/29/2016">
             <br>
-            <input type="submit" value="Correct Medication">
+            <br>
+            <input style="font-size: 14px" type="submit" value="Confirm">
         </form>
     </div>
 	</body>
