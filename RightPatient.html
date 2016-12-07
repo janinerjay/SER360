@@ -1,72 +1,84 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<title>Check Right Patient</title> <!-- This is my title-->
-        <link rel="stylesheet" href="css/style.css" ></link>
-        <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
-	</head>
-    
-	<body>
+
+<head>
+    <title>Check Right Patient</title>
+    <!-- This is my title-->
+    <link rel="stylesheet" href="css/style.css"></link>
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+</head>
+
+<body>
     <div class="sidebar_nav">
-         <ul>
+        <ul>
             <li><a href="SignIn.html">Sign In As Nurse</a></li>
             <li><a class="active" href="#">Check Patient Info</a></li>
-            <li><a href="Glucose.html">Check Glucose Level</a></li>
             <li><a href="CheckMed.html">Check Injection Info</a></li>
+            <li><a href="Glucose.html">Check Glucose Level</a></li>
             <li><a href="PatientEd.html">Educate Patient</a></li>
             <li><a href="CheckMDRT.html">Check Medication</a></li>
             <li><a href="CheckMedSec.html">Check Medication Nurse 2</a></li>
             <li><a href="MedAdmin.html">Administer Medication</a></li>
             <li><a href="Document.html">Document Injection</a></li>
         </ul>
-        </div>
-
-
-    <div class="page_content"; style="text-align:center;">
-     <img src="images/syringe.png"; width="225px" height="150px" >
-        <h1 align="center">Check Right Patient</h1>
-        <!--**Insert Patient Database with info:**-->
-        <table align="center" style="width:80%">
-            <tr>
-                <th>First Name</th>
-                <th>Last Name</th> 
-                <th>Hospital ID</th>
-                <th>Date of Birth</th>
-            </tr>
-            <!--This makes each element a link and each of these hrefs can be linked to display the same thing: display the information at the bottom of the screen-->
-            <tr>
-                <td><a href="#">Jill</a></td>
-                <td><a href="#">Smith</a></td> 
-                <td><a href="#">0274754</a></td>
-                <td><a href="#">01/27/1960</a></td>
-            </tr>
-            <tr>
-                <td><a href="#">Eve</a></td>
-                <td><a href="#">Jackson</a></td> 
-                <td><a href="#">2163948</a></td>
-                <td><a href="#">07/14/1982</a></td>
-            </tr>
-            <tr>
-                <td><a href="#">William</a></td>
-                <td><a href="#">Quin</a></td> 
-                <td><a href="#">3759283</a></td>
-                <td><a href="#">04/01/2002</a></td>
-            </tr>
-        </table>
-        <!--When the patient is clicked in the table, these fields will fill and the patient will be highlighted in another color-->
-        
-        <br>
-        <!--Then the following would pop up when they click on the patient-->
-        <div style="text-alig">
-            <p><strong>Patient Allergies: </strong>Peanuts</p>
-            <p><strong>Patient Height: </strong>67 inches</p>
-            <p><strong>Patient Weight: </strong>130 pounts</p>
-            <p><strong>Patient Age: </strong>26 years and 5 months</p>
-        </div>
-        <form action="Glucose.html">
-            <input style="font-size: 14px" type="submit" value="Confirm">
-        </form>
     </div>
-	</body>
-    
+
+    <div class="page_content" ; style="text-align:center;">
+        <img src="images/syringe.png" ; width="225px" height="150px">
+        <div class="blue_back">
+            <h1 align="center">Check Right Patient</h1>
+            <!--**Insert Patient Database with info:**-->
+            <script src="js/backendData.js"></script>
+            <table class="table table-bordered table-hovered" align="center" style="width:80%">
+                <tr>
+                    <th>First Name</th>
+                    <th>Last Name</th>
+                    <th>Hospital ID</th>
+                    <th>Date of Birth</th>
+                </tr>
+                <tr onclick="patient(1)">
+                    <td>Jill</td>
+                    <td>Smith</td>
+                    <td>0274754</td>
+                    <td>01/27/1960</td>
+                </tr>
+                <tr onclick="patient(2)">
+                    <td>Eve</td>
+                    <td>Jackson</td>
+                    <td>2163948</td>
+                    <td>07/14/1982</td>
+                </tr>
+                <tr onclick="patient(3)">
+                    <td>William</td>
+                    <td>Quin</td>
+                    <td>3759283</td>
+                    <td>04/01/2002</td>
+                </tr>
+            </table>
+            <!--When the patient is clicked in the table, these fields will fill and the patient will be highlighted in another color-->
+
+            <br>
+            <!--Then the following would pop up when they click on the patient-->
+            <div style="text-align">
+                <strong>Patient Allergies: </strong>
+                <p id="allergy"> </p>
+                <p><strong>Patient Height: </strong>
+                    <p id="height"></p>
+                </p>
+                <p><strong>Patient Weight: </strong>
+                    <p id="weight"></p>
+                </p>
+                <p><strong>Patient Age: </strong>
+                    <p id="age"></p>
+                </p>
+            </div>
+            <form action="Glucose.html">
+                <input type="submit" value="This Is The Right Patient">
+            </form>
+            <br><br>
+        </div>
+    </div>
+
+</body>
+
 </html>

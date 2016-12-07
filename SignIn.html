@@ -1,21 +1,25 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<title>Nurse Sign In</title> <!-- This is my title-->
-        <link rel="stylesheet" href="css/style.css">
-        <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
-        
-	</head>
-	<body>
-    
+
+<head>
+    <!-- This is my title-->
+    <title>Nurse Sign In</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+
+</head>
+
+<body>
+
     </div>
 
     <div class="sidebar_nav">
-         <ul>
+        <ul>
             <li><a class="active" href="#">Sign In As Nurse</a></li>
             <li><a href="RightPatient.html">Check Patient Info</a></li>
-            <li><a href="Glucose.html">Check Glucose Level</a></li>
             <li><a href="CheckMed.html">Check Injection Info</a></li>
+            <li><a href="Glucose.html">Check Glucose Level</a></li>
             <li><a href="PatientEd.html">Educate Patient</a></li>
             <li><a href="CheckMDRT.html">Check Medication</a></li>
             <li><a href="CheckMedSec.html">Check Medication Nurse 2</a></li>
@@ -24,30 +28,36 @@
         </ul>
     </div>
 
-    <div class="page_content"; style="text-align:center;">   
-    <img src="images/syringe.png"; width="225px" height="150px" >
-        <h1>Nurse Sign-In</h1>
-        <form name="login">
-            Nurse Name : <input type="text" name="userid"/><br><br>
-            Employee ID : <input type="password" name="pswrd"/><br><br>
-        <input style="font-size: 14px" type="button" onclick="check(this.form)" value="Login"/>
-        <input style="font-size: 14px" type="reset" value="Clear"/>
-        </form>
-        <script language="javascript">
-    function check(form)/*function to check userid & password*/
-    {
-    /*the following code checkes whether the entered userid and password are matching*/
-    if(form.userid.value == "House" && form.pswrd.value == "1111")
-     {
-      window.open('RightPatient.html')/*opens the target page while Id & password matches*/
-     }
-    else
-    {
-      alert("Incorrect Nurse Name or Employee ID, Press OK to try again")/*displays error message*/
-     }
-    }
-</script>
-    
-    </div> 
-	</body>
+    <div class="container">
+        <div class="page_content" ; style="text-align:center;">
+            <img src="images/syringe.png" ; width="225px" height="150px">
+            <h1>Nurse Sign-In</h1>
+            <form name="login">
+                Nurse Name :
+                <input type="text" name="userid" />
+                <br>
+                <br> Employee ID :
+                <input type="password" name="pswrd" />
+                <br>
+                <br>
+                <input style="font-size: 14px" type="button" onclick="check(this.form)" value="Login" />
+                <input style="font-size: 14px" type="reset" value="Clear" />
+            </form>
+
+            <script language="javascript">
+                function check(form) /*function to check userid & password*/ {
+                    /*the following code checkes whether the entered userid and password are matching*/
+                    if (form.userid.value == "House" && form.pswrd.value == "1111") {
+                        location.replace('RightPatient.html') /*opens the target page while Id & password matches*/
+
+                    } else {
+                        alert("Incorrect Nurse Name or Employee ID, Press OK to try again") /*displays error message*/
+                    }
+                }
+            </script>
+
+        </div>
+    </div>
+</body>
+
 </html>

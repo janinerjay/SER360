@@ -1,61 +1,67 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<title>Check Medication Second Nurse</title> <!-- This is my title-->
-        <link rel="stylesheet" href="css/style.css" ></link>
-        <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
-	</head>
-	<body>
+
+<head>
+    <title>Check Medication Second Nurse</title>
+    <!-- This is my title-->
+    <link rel="stylesheet" href="css/style.css"></link>
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+</head>
+
+<body>
 
     <div class="sidebar_nav">
-         <ul>
+        <ul>
             <li><a href="SignIn.html">Sign In As Nurse</a></li>
             <li><a href="RightPatient.html">Check Patient Info</a></li>
-            <li><a href="Glucose.html">Check Glucose Level</a></li>
             <li><a href="CheckMed.html">Check Injection Info</a></li>
+            <li><a href="Glucose.html">Check Glucose Level</a></li>
             <li><a href="PatientEd.html">Educate Patient</a></li>
             <li><a href="CheckMDRT.html">Check Medication</a></li>
             <li><a class="active" href="#">Check Medication Nurse 2</a></li>
             <li><a href="MedAdmin.html">Administer Medication</a></li>
             <li><a href="Document.html">Document Injection</a></li>
         </ul>
-        </div>
+    </div>
 
 
-    <div class="page_content"; style="text-align:center;">
-    <img src="images/syringe.png"; width="225px" height="150px" >
+    <div class="page_content" ; style="text-align:center;">
+        <img src="images/syringe.png" ; width="225px" height="150px">
         <h1>Check Medication Second Nurse</h1>
         <p><i>Please have a second nurse sign in and check the medication.</i></p>
         <form name="login">
-            Nurse Name : <input type="text" name="userid"/><br><br>
-            Employee ID : <input type="password" name="pswrd"/><br><br>
-        <input style="font-size: 14px" type="button" onclick="check(this.form)" value="Login"/>
-        <input style="font-size: 14px" type="reset" value="Clear"/>
+            Nurse Name :
+            <input type="text" name="userid" />
+            <br>
+            <br> Employee ID :
+            <input type="password" name="pswrd" />
+            <br>
+            <br>
+            <input style="font-size: 14px" type="button" onclick="check(this.form)" value="Login" />
+            <input style="font-size: 14px" type="reset" value="Clear" />
         </form>
+
         <script language="javascript">
-    function check(form)/*function to check userid & password*/
-    {
-    /*the following code checkes whether the entered userid and password are matching*/
-    if(form.userid.value != "Chris" && form.pswrd.value != "1111")
-     {
-      alert("Second Nurse Verified")/*opens the target page while Id & password matches*/
-     }
-    else
-    {
-      alert("You Entered The Same Nurse Name and ID, Please Try Again With Another Nurse's Information")/*displays error message*/
-     }
-    }
-</script>
-        
+            function check(form) /*function to check userid & password*/ {
+                /*the following code checkes whether the entered userid and password are matching*/
+                if (form.userid.value != "Chris" && form.pswrd.value != "1111") {
+                    alert("Second Nurse Verified") /*opens the target page while Id & password matches*/
+                } else {
+                    alert("You Entered The Same Nurse Name and ID, Please Try Again With Another Nurse's Information") /*displays error message*/
+                }
+            }
+        </script>
+
         <p>Medication: Humalog</p>
         <p>Route: Right Thigh</p>
         <p>Dose: 2 Units</p>
-        <p>Time: 14:56</p>
-        <p>Date: 11/29/2016</p>
+        <p>Time: 09:15</p>
+        <p>Date: 12/07/2016</p>
         <form action="MedAdmin.html">
             <input style="font-size: 14px" type="submit" value="Confirm">
         </form>
-        
-        </div>
-	</body>
+
+    </div>
+</body>
+
 </html>

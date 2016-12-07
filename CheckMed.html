@@ -1,18 +1,21 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<title>Check Medication</title> <!-- This is my title-->
-        <link rel="stylesheet" href="css/style.css" ></link>
-        <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
-	</head>
-	<body>
+
+<head>
+    <title>Check Medication</title>
+    <!-- This is my title-->
+    <link rel="stylesheet" href="css/style.css"></link>
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+</head>
+
+<body>
 
     <div class="sidebar_nav">
-         <ul>
+        <ul>
             <li><a href="SignIn.html">Sign In As Nurse</a></li>
             <li><a href="RightPatient.html">Check Patient Info</a></li>
-            <li><a href="Glucose.html">Check Glucose Level</a></li>
             <li><a class="active" href="#">Check Injection Info</a></li>
+            <li><a href="Glucose.html">Check Glucose Level</a></li>
             <li><a href="PatientEd.html">Educate Patient</a></li>
             <li><a href="CheckMDRT.html">Check Medication</a></li>
             <li><a href="CheckMedSec.html">Check Medication Nurse 2</a></li>
@@ -21,24 +24,33 @@
         </ul>
     </div>
 
-    <div class="page_content"; style="text-align:center;">
-        <img src="images/syringe.png"; width="225px" height="150px" >
+    <div class="page_content" ; style="text-align:center;">
+        <img src="images/syringe.png" ; width="225px" height="150px">
         <h1>Check Medication</h1>
 
         <p><i>Look at the medication vial and click on the brand below to verify the correct medication.</i></p>
 
-        <form action="PatientEd.html">
-            <input type="radio" name="brand" value="Humalog"> Humalog<br>
-            <input type="radio" name="brand" value="Nomalog"> Nomalog<br>
-            <input type="radio" name="brand" value="Glulisine"> Glulisine<br>
-            <input type="radio" name="brand" value="Humulin"> Humulin<br>
-            <input type="radio" name="brand" value="Novolin"> Novolin<br>
-            <input type="radio" name="brand" value="Basaglar"> Basaglar<br>
-            <input type="radio" name="brand" value="Levemir"> Levemir<br>
-            <br><br>
-            <input style="font-size: 14px" type="submit" value="Confirm"> 
+        <form action="Glucose.html">
+            <input type="radio" name="brand" value="Humalog"> Humalog
+            <br>
+            <input type="radio" name="brand" value="Nomalog"> Nomalog
+            <br>
+            <input type="radio" name="brand" value="Glulisine"> Glulisine
+            <br>
+            <input type="radio" name="brand" value="Humulin"> Humulin
+            <br>
+            <input type="radio" name="brand" value="Novolin"> Novolin
+            <br>
+            <input type="radio" name="brand" value="Basaglar"> Basaglar
+            <br>
+            <input type="radio" name="brand" value="Levemir"> Levemir
+            <br>
+            <br>
+            <br>
+            <input style="font-size: 14px" type="submit" value="Confirm">
         </form>
-    </div>  
-        
-	</body>
+    </div>
+    <br><br>
+</body>
+
 </html>
