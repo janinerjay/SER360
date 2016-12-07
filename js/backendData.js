@@ -9,7 +9,7 @@ function patient(patNum){
         chosenPatient = true;
     }
     if(patNum==2){
-        document.getElementById("allergy").innerHTML = 'none';
+        document.getElementById("allergy").innerHTML = 'None';
         document.getElementById("height").innerHTML = '5 foot 7 inches';
         document.getElementById("weight").innerHTML = '130 pounds';
         document.getElementById("age").innerHTML = '34 years and 5 months';
