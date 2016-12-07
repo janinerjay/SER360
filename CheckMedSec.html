@@ -1,15 +1,22 @@
+<!--Created by Janine Jay, Reed Arnold, and Christian DeGenova-->
+
 <!DOCTYPE html>
 <html>
 
+<!--Header-->
 <head>
-    <title>Check Medication Second Nurse</title>
-    <!-- This is my title-->
+    
+    <title>Check Medication Second Nurse</title><!-- This is my title-->
+    <meta charset="utf-8">
     <link rel="stylesheet" href="css/style.css"></link>
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    
 </head>
 
+<!--Body-->
 <body>
-
+    
+    <!--Sidebar-->
     <div class="sidebar_nav">
         <ul>
             <li><a href="SignIn.html">Sign In As Nurse</a></li>
@@ -24,11 +31,19 @@
         </ul>
     </div>
 
-
+    <!--Page Contents-->
     <div class="page_content" ; style="text-align:center;">
+        
+        <!--Syringe Image-->
         <img src="images/syringe.png" ; width="225px" height="150px">
+        
+        <!--Page Title-->
         <h1>Check Medication Second Nurse</h1>
+        
+        <!--Instructions-->
         <p><i>Please have a second nurse sign in and check the medication.</i></p>
+        
+        <!--Second Nurse Sign In Form-->
         <form name="login">
             Nurse Name :
             <input type="text" name="userid" />
@@ -41,6 +56,7 @@
             <input style="font-size: 14px" type="reset" value="Clear" />
         </form>
 
+        <!--Check for Second Nurse-->
         <script language="javascript">
             function check(form) /*function to check userid & password*/ {
                 /*the following code checkes whether the entered userid and password are matching*/
@@ -52,16 +68,20 @@
             }
         </script>
 
+        <!--Documentation Information to Check-->
         <p>Medication: Humalog</p>
         <p>Route: Right Thigh</p>
         <p>Dose: 2 Units</p>
         <p>Time: 09:15</p>
         <p>Date: 12/07/2016</p>
+        
+        <!--Next Page Button-->
         <form action="MedAdmin.html">
             <input style="font-size: 14px" type="submit" value="Confirm">
         </form>
 
     </div>
+    
 </body>
 
 </html>

@@ -1,15 +1,22 @@
+<!--Created by Janine Jay, Reed Arnold, and Christian DeGenova-->
+
 <!DOCTYPE html>
 <html>
 
+<!--Header-->
 <head>
-    <title>Check Medication/Dose/Route/Time</title>
-    <!-- This is my title-->
+    
+    <title>Check Medication/Dose/Route/Time</title><!-- This is my title-->
+    <meta charset="utf-8">
     <link rel="stylesheet" href="css/style.css"></link>
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    
 </head>
 
+<!--Body-->
 <body>
 
+    <!--Sidebar-->
     <div class="sidebar_nav" style="text-align:left">
         <ul>
             <li><a href="SignIn.html">Sign In As Nurse</a></li>
@@ -24,25 +31,31 @@
         </ul>
     </div>
 
+    <!--Page Contents-->
     <div class="page_content" ; style="text-align:center;">
+        
+        <!--Syringe Image-->
         <img src="images/syringe.png" ; width="225px" height="150px">
+        
+        <!--Page Title-->
         <h1>Check Right Medication, Route, Dose, Time, and Date</h1>
 
 
-
+        <!--Instructions and Notes-->
         <p>Select a Route According To The Below Notes</p>
         <p>Injection Notes: Alternating thighs with each injection</p>
 
-        <!-- <img src="images/body1.png" id="body1"> 
-         Remake coordinates to make them more accurate,
-         put a tip marker at the last injection-->
+        <!--Body Images-->
         <div style="display:flex; padding-left:200px">
             
+            <!--Marker Image-->
             <img src="images/marker.png" id="marker" width="40px" height="40px" style="display:none; position:absolute; left:400; top:100; background-color:transparent;" />
-            
+  
+            <!--First Body Image-->
             <img src="images/body1.png" id="map" style="padding-right:200px"/>
             <p> </p>
             
+            <!--Last Route Body Image-->
             <div class="tooltip">
                 <img src="images/body1.png" id="map" />
                 <span class="tooltiptext">Last Route</span>
@@ -50,6 +63,7 @@
             
         </div>
         
+        <!--Javascript to handle placement of marker-->
         <script type="text/javascript">
             document.getElementById('map').onclick = function (e) {
                 with(document.getElementById('marker')) {
@@ -64,6 +78,8 @@
 
             };
         </script>
+        
+        <!--Styling for Marker-->
         <style>
             .tooltip {
                 position: relative;
@@ -102,6 +118,7 @@
             }
         </style>
 
+        <!--Notes on Other Documentation-->
         <p>Medication: Humalog</p>
         <p>Last Route: Left Thigh</p>
         <p>Dose: 2 Units</p>

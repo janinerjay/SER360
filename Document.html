@@ -1,15 +1,22 @@
+<!--Created by Janine Jay, Reed Arnold, and Christian DeGenova-->
+
 <!DOCTYPE html>
 <html>
-
+    
+<!--Header-->
 <head>
-    <title>Medication Documentation</title>
-    <!-- This is my title-->
+    
+    <title>Medication Documentation</title><!-- This is my title-->
+    <meta charset="utf-8">
     <link rel="stylesheet" href="css/style.css"></link>
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    
 </head>
 
+<!--Body-->
 <body>
-
+    
+    <!--Sidebar-->
     <div class="sidebar_nav">
         <ul>
             <li><a href="SignIn.html">Sign In As Nurse</a></li>
@@ -24,10 +31,16 @@
         </ul>
     </div>
 
+    <!--Page Contents-->
     <div class="page_content" ; style="text-align:center;">
+        
+        <!--Syringe Image-->
         <img src="images/syringe.png" ; width="225px" height="150px">
+        
+        <!--Page Title-->
         <h1>Check Documentation</h1>
 
+        <!--Editable Documentation Table-->
         <table align="center" style="width:70%">
             <tr>
                 <td style="background-color:#7A7A7A; color:#fff; width:50%">Patient Name</td>
@@ -71,19 +84,23 @@
             </tr>
         </table>
 
+        <!--Notes Section-->
         <textarea name="text" cols="89" rows="5" style="font-size: 16px;">
             Add Comment/Notes for this Patient Here
         </textarea>
 
+        <!--Signature Section-->
         <p>Please sign on the dotted line below.</p>
         <iframe src="signature.svg" style="width:300; height:50"></iframe>
 
+        <!--Submit Documentation Button-->
         <form action="SignIn.html">
             <br>
             <input style="font-size: 14px" type="submit" value="Document Injection">
             <br>
         </form>
         <br><br>
+        
 </body>
 
 </html>

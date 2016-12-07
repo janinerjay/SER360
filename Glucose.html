@@ -1,15 +1,20 @@
+<!--Created by Janine Jay, Reed Arnold, and Christian DeGenova-->
+
 <!DOCTYPE html>
 <html>
 
+<!--Header-->
 <head>
-    <title>Check Glucose</title>
-    <!-- This is my title-->
+    <title>Check Glucose</title><!-- This is my title-->
+    <meta charset="utf-8">
     <link rel="stylesheet" href="css/style.css"></link>
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
 </head>
 
+<!--Body-->
 <body>
 
+    <!--Sidebar-->
     <div class="sidebar_nav">
         <ul>
             <li><a href="SignIn.html">Sign In As Nurse</a></li>
@@ -24,11 +29,17 @@
         </ul>
     </div>
 
+    <!--Page Contents-->
     <div style="text-align:center;" class="page_content">
+
+        <!--Syringe Image-->
         <img src="images/syringe.png" ; width="225px" height="150px">
+
+        <!--Page Title-->
         <h1>Check Patient Glucose Level</h1>
         <h4>Patient's Normal Glucose Level: 80</h4>
 
+        <!--Glucose Too Low Alert-->
         <script type="text/javascript">
             function handleSubmit() {
                 var g = document.getElementById("glevel").value;
@@ -38,6 +49,7 @@
             }
         </script>
 
+        <!--Check Glucose Form-->
         <form onsubmit="handleSubmit(); return false;">
             Glucose Level:
             <input type="text" name="glevel" id="glevel">
@@ -48,6 +60,7 @@
 
         <br>
 
+        <!--Sliding Scale Table-->
         <table align="center" style="width:80%">
             <tr id="high">
                 <th colspan="2">Sliding Scale</th>
@@ -90,11 +103,16 @@
             </tr>
         </table>
         <br>
+
+        <!--Next Page Button-->
         <form action="PatientEd.html">
             <input style="font-size: 14px" type="submit" value="Glucose Checked">
         </form>
-        <br><br>
+        <br>
+        <br>
+
     </div>
+
 </body>
 
 </html>
